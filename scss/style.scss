@@ -1,0 +1,345 @@
+$bg-color:#ffffff;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+  }
+  h1, h2, h3, h4 {
+    margin: 0;
+    font-family: 'Fraunces', serif;
+  }
+  /* GENERAL */
+  html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background: $bg-color;
+    overflow-x: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  ul li {
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+  }
+
+
+  /* Header*/
+
+header {
+  padding: 44px 0 45px 0;
+  
+}
+.header-logo {
+  grid-column-gap: 16px;
+}
+.navbar {
+  grid-column-gap: 33px;
+  justify-content: flex-end;
+  a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    transition: all .3s ease;
+    &:hover {
+      color: #333D4B;
+    }
+  }
+} 
+.header-menu {
+  display: none;
+}
+.header-titles {
+  display: none;
+}
+
+/* Section1*/
+.section1-title {
+  background: url(https://coffeeroasters.netlify.app/assets/home/desktop/image-hero-coffeepress.jpg);
+  background-size: cover;
+  text-align: left;
+  background-size: cover;
+  padding: 117px 85px;
+  margin-bottom: 168px;
+  border-radius: 10px;
+}
+.section1-div h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+.section1-div p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 71px;
+  padding-right: 65px;
+}
+.section1-div a {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  background: #0E8784;
+  border-radius: 6px;
+  padding: 16px 31px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer*/
+.footer-title {
+  padding: 48px 0;
+  background: #2C343E;
+  margin-bottom: 88px;
+}
+.navbar-footer {
+  grid-row-gap: 33px;
+}
+.footer-icon a:nth-child(1) i {
+  background: #FEFCF7;
+  font-size: 30px;
+  color:#2C343E ;
+  transition: all .3s ease;
+}
+.footer-icon a:nth-child(1):hover i {
+  background: #FDD6BA;
+}
+.footer-icon a:nth-child(2) i {
+  font-size: 30px;
+  color: #FEFCF7;
+  transition: all .3s ease;
+}
+.footer-icon a:nth-child(2):hover i {
+  color: #FDD6BA;
+}
+.footer-icon a:nth-child(3) i {
+  font-size: 30px;
+  color: #FEFCF7;
+  transition: all .3s ease;
+}
+.footer-icon a:nth-child(3):hover i {
+  color: #FDD6BA;
+}
+.footer-logo {
+  grid-column-gap: 16px;
+}
+.footer-logo img:nth-child(1) {
+  width: 10%;
+}
+.footer-logo img:nth-child(2) {
+  width: 65%;
+}
+
+
+
+.navbar-footer a {
+  color: #83888F;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.92px;
+  transition: all .3s ease;
+}
+.navbar-footer a:hover {
+  color: #ffffff;
+}
+
+
+
+
+
+
+@media (max-width:62rem) {
+  .section1-title {
+    padding: 104px 58px;
+    background-size: cover;
+    text-align: left;
+    margin-bottom: 144px;
+  }
+  .navbar-footer {
+    justify-content: center;
+    grid-column-gap: 33px;
+    margin-bottom: 65px;
+  }
+  .footer-logo {
+    grid-column-gap: 16px;
+    justify-content: center;
+    margin-bottom: 33px;
+  }
+  .footer-icon {
+    justify-content: center;
+    grid-column-gap: 24px;
+  }
+  .section1-div h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .section1-div p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .section1-div a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+
+@media (max-width:48rem) {
+   
+  .navbar-footer {
+    flex-direction: column;
+  }
+  .navbar {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+    padding: 0;
+    text-align: end;
+    i {
+      font-size: 30px;
+    }
+    .bxs-message-square-x {
+      display: none;
+    }
+    .bx-menu {
+      display: block;
+    }
+  }
+  .header-logo {
+    grid-column-gap: 9px;
+  }
+  .display .header-menu .bx-menu {
+    display: none;
+  };
+  .display .bxs-message-square-x {
+    display: block;
+  }
+
+  .header-titles {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 557px;
+    z-index: 10;
+    top: 12%;
+    list-style: none;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ffffff), color-stop(55.94%, rgba(254, 252, 247, 0.504981)));
+    background: linear-gradient(#ffffff 30%, rgba(254, 252, 247, 0.504981) 55.94%);
+    padding: 40px 0;
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    transform: translateY(-115%);
+    .heaader-title-div {
+      position: relative;
+      width: 100%;
+    }    
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 32px;
+      a {
+        text-decoration: none;
+        color: #333D4B;
+        font-size: 24px;
+        font-weight: 900;
+        font-family: 'Fraunces', sans-serif;
+      }
+    }
+  }
+  .display #header {
+    transform: translateY(0);
+  }
+  .section1-div h1 {
+    font-size: 43px;
+    line-height: 52px;
+  }
+  .section1-title {
+    text-align: center;
+  }
+  .section1-div p {
+    padding: 0;
+  }
+  .section1-div h1 {
+    padding: 0;
+  }
+  .section1-title {
+    padding: 100px 24px;
+    width: 100%;
+    text-align: center;
+    background: url(https://coffeeroasters.netlify.app/assets/home/mobile/image-hero-coffeepress.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 120px;
+  }
+}
